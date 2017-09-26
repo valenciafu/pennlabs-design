@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./bootstrap-css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+
+    <title>Bookshelf</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-toggleable-md navbar-theme">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand navbar-link" id="Bookshelf" href="#">Bookshelf</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link navbar-link" href="#" style="color:#FFFFFF">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-link" href="#" style="color:#FFFFFF">+ Add listing</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="sidebar col-md-3" style="height:100%;float:left">
+                <div class="card" id="searchCard">
+                    <h5 class="card-header">Search by course</h5>
+                    <div class="card-block">
+                        <div class="form-group">
+                            <input type="searchcourse" class="form-control form-round" aria-describedby="course" style="background-color:#b2dfdb;border-color:transparent" placeholder="MKTG 101">
+                        </div>
+                        <div class="form-group">
+                            <input type="searchcourse" class="form-control form-round" aria-describedby="course" style="background-color:#f8bbd0;border-color:transparent" placeholder="STAT 102">
+                        </div>
+                        <div class="form-group">
+                            <input type="searchcourse" class="form-control form-round" aria-describedby="course" style="background-color:#c8e6c9;border-color:transparent" placeholder="BIOL 215">
+                        </div>
+                        <div class="form-group">
+                            <input type="searchcourse" class="form-control form-round" aria-describedby="course" style="background-color:#ffccbc;border-color:transparent" placeholder="ANCH 027">
+                        </div>
+                        <div class="form-group">
+                            <input type="searchcourse" class="form-control form-round" aria-describedby="course" placeholder="+ Add new course">
+                        </div>
+                        <button class="btn btn-sm" type="submit" id="submit" style="float:right">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9" style="height:100%;float:left">
+                <div class="row">
+                    <div class="card col-md-5">
+                        <div class="card-block">
+                            <p><b>Welcome to Bookshelf!</b>
+                                <br>
+                                <br>Bookshelf is a marketplace for textbook sales. Search for textbooks by course code. Create an account to list books for sale and make offers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-md-5">
+                        <div class="card-block">
+                            <p>You can view your offers and listings from your account dashboard.
+                                <br> When an offer is accepted, contact information of the buyer and seller will be exchanged. Use the contact information to arrange the logistics of the sale.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card bd-callout col-md-5" id="mktg">
+                        <div class="card-block">
+                            <div class="row border-between">
+                                <div class="col-md-8">
+                                    <h5>MKTG 101</h5>
+                                    <i>Strategic Marketing Management</i>
+                                    <br>
+                                    <br>
+                                    <small>POSTED 1 HOUR AGO</small>
+                                </div>
+                                <div class="col-md-4" style="text-align:right;padding-top:10%">
+                                    <small>Last offer</small>
+                                    <h2>$25</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bd-callout col-md-5" id="anch">
+                        <div class="card-block">
+                            <div class="row border-between">
+                                <div class="col-md-8">
+                                    <h5>ANCH 027</h5>
+                                    <i>The Romans: from Village to Empire</i>
+                                    <br>
+                                    <br>
+                                    <small>POSTED 2 DAYS AGO</small>
+                                </div>
+                                <div class="col-md-4" style="text-align:right;padding-top:10%">
+                                    <small>Last offer</small>
+                                    <h2>$30</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bd-callout col-md-5" id="biol">
+                        <div class="card-block">
+                            <div class="row border-between">
+                                <div class="col-md-8">
+                                    <h5>BIOL 215</h5>
+                                    <i>Principles of Human Physiology</i>
+                                    <br>
+                                    <br>
+                                    <small>POSTED 2 DAYS AGO</small>
+                                </div>
+                                <div class="col-md-4" style="text-align:right;padding-top:10%">
+                                    <small>Last offer</small>
+                                    <h2>$25</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bd-callout col-md-5" id="stat">
+                        <div class="card-block">
+                            <div class="row border-between">
+                                <div class="col-md-8">
+                                    <h5>STAT 102</h5>
+                                    <i>Statistics for Business</i>
+                                    <br>
+                                    <br>
+                                    <small>POSTED 4 DAYS AGO</small>
+                                </div>
+                                <div class="col-md-4" style="text-align:right;padding-top:10%">
+                                    <small>Last offer</small>
+                                    <h2>$25</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bd-callout col-md-5" id="anch">
+                        <div class="card-block">
+                            <div class="row border-between">
+                                <div class="col-md-8">
+                                    <h5>ANCH 027</h5>
+                                    <i>The Romans: from Village to Empire</i>
+                                    <br>
+                                    <br>
+                                    <small>POSTED 4 DAYS AGO</small>
+                                </div>
+                                <div class="col-md-4" style="text-align:right;padding-top:10%">
+                                    <small>Last offer</small>
+                                    <h2>$25</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
